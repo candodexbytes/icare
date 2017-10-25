@@ -1,0 +1,247 @@
+lock@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;/* background:url(../images/body.jpg) no-repeat center 0; */
+	overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, p {
+	margin: 0px;
+	padding: 0px;
+}
+a:hover {
+	text-decoration: none;
+}
+a:focus {
+	outline: none
+}
+input:focus {
+	outline: 0;
+}
+a {
+	color: #005f9a;
+}
+.last-div {
+	float: right;
+}
+th {
+	font-size:14px !important;
+	font-weight:bold !important;
+}
+th a {
+	color:#fff;
+}
+th a:hover {
+	color:#f9f9f9;
+}
+a:hover {
+	color: #018f3c;
+}
+.full-width {
+	width: 100%;
+	display: inline-block;
+}
+header {
+	padding: 12px 0 15px;
+}
+header .navbar-inverse {
+	background: none;
+	border: none
+}
+header .navbar-inverse .navbar-nav > li > a {
+	color: #005f9a;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 0px 10px;
+	margin-top: 30px;
+}
+header .navbar-inverse .navbar-nav > li.active > a {
+	background: none;
+	color: #005f9a
+}
+img {
+	max-width: 100%;
+}
+header .navbar-inverse .navbar-nav > li > a:hover, header .navbar-inverse .navbar-nav > li.active > a:hover {
+	color: #018f3c;
+	background: none;
+}
+ html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    height: 100vh;
+    margin: 0;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+#footer {
+	width: 100%;
+	display: inline-block;
+	background: #f2f3f5;
+	padding: 2em 0 1em;
+}
+#footer p {
+	font-weight: bold;
+	font-size: 85%;
+}
+#footer ul li {
+	display: inline-block;
+	list-style: none;
+	font-weight: bold;
+	font-size: 100%;
+	margin-left: 15px;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color: #005f9a;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+	background-color: #005f9a;
+}
+.navbar-inverse .navbar-toggle:focus .icon-bar, .navbar-inverse .navbar-toggle:hover .icon-bar {
+	background-color: #fff;
+}
+
+.req {
+	color: red;
+	font-size: 13px;
+}
+.lo-co {
+	margin-top: 25px;
+}
+.login-box {
+	border: 1px solid #eee;
+	margin-bottom: 20px;
+}
+.login-reg {
+	/*background: #005f9a;
+
+	font-size: 22px;
+
+	color: #fff;
+
+	padding: 10px;
+
+	line-height: 23px;*/
+
+	display:none;
+}
+.login-form {
+	margin-top: 25px;
+	padding: 0px 10px 10px;
+}
+.login-form label {
+	font-weight: 600;
+	width: 30%;
+	vertical-align:top;
+}
+.reg .login-form input.error {
+	color:#333;
+}
+.login-form input:not([type=submit]) {
+	width: 60%;
+	box-shadow: none;
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	padding: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display:inline-block;
+}
+#login-sign-up {
+	padding: 2%;
+	font-size: 20px;
+}
+#login-sign-in {
+	padding: 2%;
+	font-size: 20px;
+	font-weight: 600;
+}
+#login-sign-in a:hover {
+	text-decoration: underline;
+}
+#login-sign-up a:hover {
+	text-decoration: underline;
+}
+.subject_field {
+	clear: both;
+	margin-bottom: 25px;
+}
+.btc_field {
+	clear: both;
+	margin-bottom: 25px;
+}
+.list_head{
+	border: 1px solid #ccc;
+    padding: 12px 0px;
+    background: rgb(63, 78, 181);
+    color: #fff;
+}
+.list_body{
+	
+    padding: 15px 0px;
+    
+}
+.list_border{
+	border: 1px solid;
+    width: 100%;
+    padding: 0;
+    border-top: none;
+}
+.top_part .col-lg-12{
+	padding: 0;
+}
+img#set_image {
+    width: 100px!important;
+    height: 100px!important;
+}
+.img_hide{
+	display: none;
+}
