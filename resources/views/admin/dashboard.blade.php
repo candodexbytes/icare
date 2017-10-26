@@ -7,7 +7,7 @@
             
             <div class="content">
                 <div class="title m-b-md">
-                    Condo Management Home Page 
+                    Condo Management Daashboard
                 </div>
 
                

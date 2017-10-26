@@ -15,7 +15,7 @@ class Login extends Model
    
     public function login_check($data){
     	
-        $check =  DB::table('users')->where('mobile_number',$data['mobile_number'])->where('password',$data['password'])->first(); 
+        $check =  DB::table('users')->where('nric',$data['nric'])->where('mobile_number',$data['mobile_number'])->where('password',$data['password'])->first(); 
 
         return $check;
     }

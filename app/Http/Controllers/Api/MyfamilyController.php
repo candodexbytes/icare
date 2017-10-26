@@ -11,7 +11,7 @@ class MyfamilyController extends Controller
     
     public function index(Request $request )
     {
-    	$token_show = base64_encode('my-family');
+    	$token_show = base64_encode('delete-image');
         $postData = $request->all();
         $myfamily_obj = new Myfamily;
         
@@ -87,12 +87,25 @@ class MyfamilyController extends Controller
                     'image'         => $image
                 );
 
-            $data = $myfamily_obj->save_image($dataArray);
-            return response()->json(['response'=>'1','data' => $data]);
+            $data_id = $myfamily_obj->save_image($dataArray);
+            return response()->json(['response'=>'1','id' => $data_id]);
 
         }else{
             return response()->json(['response'=>'0']);
         }
         return response()->json(['response'=>'0']);
     }
+    public function deleteImage(Request $request)
+    {
+        $postData = $request->all();
+        $token = base64_decode($postData['token']);  
+        $myfamily_obj = new Myfamily;
+        if($token == 'delete-image'){
+            $id    = $postData['id'];
+            $data_id = $myfamily_obj->delete_image($id);
+            return response()->json(['response'=>'1']);
+        }
+        return response()->json(['response'=>'0']);
+    }
+    
 }

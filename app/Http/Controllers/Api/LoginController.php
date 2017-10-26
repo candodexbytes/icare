@@ -22,11 +22,11 @@ class LoginController extends Controller
     	$Login_obj = new Login;
         $postData = $request->all();
         $token = base64_decode($postData['token']);
-        
+        $nric_number = $postData['nric'] ;
         $mobile_number = $postData['mobile_number'] ;
         $password = md5($postData['password']);
         if($token == 'api-login'){
-            $login_array = array('mobile_number' => $mobile_number,'password' => $password );
+            $login_array = array('nric' => $nric_number,'mobile_number' => $mobile_number,'password' => $password );
             $data_get = $Login_obj->login_check($login_array);
             if(count($data_get) == 1){
                 return response()->json(['response'=>'1','id'=>$data_get->id,'nric'=>$data_get->nric,'mobile_number'=>$data_get->mobile_number]);

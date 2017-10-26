@@ -25,6 +25,7 @@ Route::resource('register', 'Api\RegisterController');
 Route::resource('login', 'Api\LoginController');
 Route::resource('all-property', 'Api\PropertyController');
 Route::resource('my-family', 'Api\MyfamilyController');
+Route::resource('delete-image', 'Api\MyfamilyController@deleteImage');
 Route::post('my-family/get', 'Api\MyfamilyController@getAllFamily');
 Route::resource('otp-genrate', 'Api\OtpController');
 Route::resource('otp-verify', 'Api\OtpVerifyController');

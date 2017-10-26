@@ -5,7 +5,7 @@
    @section('content')
 		<div class="container">
 
-	    <h2>Admin property Add New</h2>
+	    <h2>Admin Add New Property</h2>
 
 		</div>
 
