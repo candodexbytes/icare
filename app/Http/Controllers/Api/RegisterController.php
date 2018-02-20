@@ -19,7 +19,8 @@ class RegisterController extends Controller
 	public function store(Request $request)
     {
         $postData = $request->all();
-       
+        
+        $name = $postData['name'] ;
         $nric_number = $postData['nric'] ;
         $password = md5($postData['password']);
         $mobile_number = $postData['mobile_number'];
@@ -32,15 +33,9 @@ class RegisterController extends Controller
             if($mobile_check == 1){
                 return response()->json(['response'=>'2']);
             }else{
-                $nric_check = $register_obj->nric_check($nric_number);
-                if($nric_check == 1){
-                    return response()->json(['response'=>'3']);
-                }else{
-                    $register_array = array('nric' => $nric_number,'mobile_number' => $mobile_number,'password' => $password,'type' => $type );
+                    $register_array = array('name'=>$name,'nric' => $nric_number,'mobile_number' => $mobile_number,'password' => $password,'type' => $type );
                     $save_record = $register_obj->register($register_array);
-                    return response()->json(['response'=>'1','type'=>$type,'mobile_number'=>$mobile_number,'id'=>$save_record]);
-                }
-                
+                    return response()->json(['response'=>'1','type'=>$type,'name'=>$name,'mobile_number'=>$mobile_number,'id'=>$save_record]);
             }
 
         }else{

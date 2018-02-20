@@ -13,5 +13,11 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         //
+        '/admin/addNewUnitUser',
+        '/admin/save-withdrawal',
+        '/admin/save-setting',
+        '/admin/reminder',
+        '/admin/remove-teman-from-management',
+        '/admin/delete-teman'
     ];
 }

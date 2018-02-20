@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Condo Management'),
+    'name' => env('APP_NAME', 'ICARES'),
 
     /*
     |--------------------------------------------------------------------------
@@ -178,6 +178,10 @@ return [
         App\Providers\RouteServiceProvider::class,
         SimpleSoftwareIO\SMS\SMSServiceProvider::class,
         'Collective\Html\HtmlServiceProvider',
+        Nexmo\Laravel\NexmoServiceProvider::class,
+        Unisharp\Ckeditor\ServiceProvider::class,
+        Barryvdh\DomPDF\ServiceProvider::class,
+        
     ],
 
     /*
@@ -229,6 +233,11 @@ return [
         'SMS' => SimpleSoftwareIO\SMS\Facades\SMS::class,
         'Form' => 'Collective\Html\FormFacade',
         'HTML' => 'Collective\Html\HtmlFacade',
+        'Nexmo' => Nexmo\Laravel\Facade\Nexmo::class,
+        'PDF' => Barryvdh\DomPDF\Facade::class,
+        
+
+        
     ],
 
 ];

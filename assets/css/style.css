@@ -75,7 +75,7 @@ header .navbar-inverse .navbar-nav > li > a:hover, header .navbar-inverse .navba
     background-color: #fff;
     color: #636b6f;
     font-family: 'Raleway', sans-serif;
-    font-weight: 100;
+    /*font-weight: 100;*/
     height: 100vh;
     margin: 0;
 }
@@ -221,7 +221,7 @@ header .navbar-inverse .navbar-nav > li > a:hover, header .navbar-inverse .navba
 .list_head{
 	border: 1px solid #ccc;
     padding: 12px 0px;
-    background: rgb(63, 78, 181);
+    background: rgb(32, 157, 228);
     color: #fff;
 }
 .list_body{
@@ -244,4 +244,591 @@ img#set_image {
 }
 .img_hide{
 	display: none;
+}
+.nav .panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 4px;
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    border: 0
+}
+.nav .panel-default>.panel-heading {
+    color: #000;
+    background-color: transparent !important;
+    border-color: transparent;
+}
+.nav .panel-heading .panel-title > a{
+	display: inline-block;
+    width: 100%;
+    padding: 16px 15px;
+    margin: -1px 0 0 0
+}
+.nav .panel-heading{
+	padding: 0
+}
+
+p.deactivate {
+    color: #8BC34A;    
+    font-size: 20px;
+}
+
+p.activate{
+	font-size: 20px;
+}
+
+.active_toggle{
+	color: #8BC34A;
+}
+
+/*.nav  .collapsed .fa.arrow::before{
+	content: "\f107"
+}*/
+.payment_text p{
+	font-weight: 400!important;
+}
+.payment_text p{
+	font-weight: 400!important;
+        line-height: 25px;
+     
+}
+
+.payment_title > p > span {
+    font-weight: 600;
+    font-size: 20px !important;
+    margin-bottom: 15px !important;
+    display: inherit;
+}
+
+@media screen and (min-width: 360px) and (max-width: 667px) {
+.link_block {
+    width: 100%;
+    padding: 20px 0px;
+  
+}
+.heding_link h3 {
+	float: left;
+	font-size: 20px;
+}
+.link_detail h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e44242;
+    padding-top: 29px;
+    line-height: 25px;
+}
+.sidebar .sidebar-nav.navbar-collapse {
+    padding-top: 105px;
+}
+.sidebar ul li a {
+	font-size: 15px !important;
+}
+.square_1 {
+    margin: 12px 0px;
+}
+.add_item a {
+    margin-left: 0px;
+}
+.right_block {
+    margin-top: 0px;
+}
+.add_unit {
+    width: 100%;
+    margin: 0px;
+}
+.navbar-default .navbar-nav>li>a {
+    font-size: 11px;
+}
+.title_text_pro {
+    font-size: 19px;
+}
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+.main-div {
+    overflow-x: auto;
+}
+.content {
+    text-align: center;
+    margin-top: 39px;
+}
+.link_detail button#pcs-cc-button {
+
+    margin-left: -24px;
+}
+
+.link_detail h3 {
+    font-size: 9px;
+    font-weight: 600;
+    color: #e44242;
+    margin-top: -8px;
+    border: 1px solid #c1c0c0;
+    padding: 10px 9px;
+    border-radius: 7px;
+}
+.link_block {
+    width: 100%;
+    padding: 47px 20px 67px 1px;
+}
+.block {
+    width: 100%;
+}
+}
+/*==============*/
+    
+td.detail_btn {
+    background: url('https://datatables.net/examples/resources/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.detail_btn {
+    background: url('https://datatables.net/examples/resources/details_close.png') no-repeat center center;
+}
+.main-div {
+    padding-top: 56px;
+}
+.modal-header.middle {
+    text-align: center;
+    text-decoration: underline;
+}
+.modal-header.middle button.close {
+    font-size: 27px;
+    margin-right: 23px;
+   
+}
+.modal-body.pad {
+    padding: 18px 0px 0px 49px;
+}
+
+/*==============*/
+.handyman-contact-add .no-pad .add_new_property {
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.tenantusers td.detail_unit {
+    background: url('https://datatables.net/examples/resources/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+.tenantusers tr.shown td.detail_unit {
+    background: url('https://datatables.net/examples/resources/details_close.png') no-repeat center center;
+}
+ .tenantusers .main-div {
+    padding-top: 56px;
+}
+.tenantusers .modal-header.middle {
+    text-align: center;
+    text-decoration: underline;
+}
+.tenantusers .modal-header.middle button.close {
+    font-size: 27px;
+    margin-right: 23px;
+   
+}
+.tenantusers .modal-body.pad {
+    padding: 18px 0px 0px 49px;
+}
+.maintenance-detail .main-div div#contact_list_wrapper {
+    padding-top: 30px;
+}
+.maintenance-detail td.details-control {
+    background: url('https://datatables.net/examples/resources/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+.maintenance-detail tr.shown td.details-control {
+    background: url('https://datatables.net/examples/resources/details_close.png') no-repeat center center;
+}
+
+ .align-window {
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding-top: 25px;
+    border-radius: 8px;
+}
+.add-unit1 .add_unit {
+    width: 70%;
+    margin: 0px 200px auto;
+}
+.add-unit1 .add_unit input.btn.btn-default.my_btn {
+    padding: 9px 27px;
+}
+
+ .coupan-add .no-pad .add_new_property {
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+ .mrg-top1 {
+    margin-top: 14px;
+}
+.mrg-top1 h4 span {
+    padding: 14px 0px;
+}
+.notice .main-div div#notice_list_wrapper {
+    padding-top: 30px;
+}
+
+ .property-data .detail_modal {
+    padding-bottom: 13px;
+}
+.property-data .bm_spc{
+  padding-bottom: 16px;
+}
+
+
+ .unit-user-data .modal-dialog {
+  width: 80%;
+  height: 100%;
+  padding: 0;
+}
+
+.unit-user-data .modal-content {
+  height: 100%;
+  border-radius: 0;
+}
+.unit-user-data .chnge_modal .modal-title {
+    margin: 0px;
+    line-height: 1.428571;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.unit-user-data .chnge_modal .modal-header .close {
+    margin-top: -9px;
+    font-size: 37px;
+    margin-right: 7px;
+}
+.unit-user-data .chnge_modal .modal-content {
+    padding: 0px 56px 0px 56px;
+}
+.unit-user-data .main_bg{
+  background-color: #d6d6d6c7;
+}
+.unit-user-data .chnge_modal span.pull-left {
+    padding-bottom: 10px;
+}
+.unit-user-data .chnge_modal .mrg-top {
+    margin-top: 0px;
+}
+.unit-user-data .chnge_modal .table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #2d2c2c;
+}
+.unit-user-data .chnge_modal .mrg-top {
+    margin-top: 0;
+}
+.unit-user-data .chnge_modal span.pull-left {
+    margin: 14px 0px;
+}
+.unit-user-data .chnge_modal .modal-body {
+    padding: 0;
+}
+.unit-user-data .chnge_modal tbody#the_list1 tr {
+    border-bottom: 1px solid #333333;
+}
+.unit-user-data .chnge_modal tbody#the_list2 tr {
+    border-bottom: 1px solid #333333;
+}
+
+.complaint .main-div div#complaint_list_wrapper {
+    padding-top: 4px;
+}
+
+
+ .unit_new td.details-control {
+    background: url('https://datatables.net/examples/resources/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+.unit_new tr.shown td.details-control {
+    background: url('https://datatables.net/examples/resources/details_close.png') no-repeat center center;
+}
+.unit_new .main-div {
+ padding-top: 58px;
+}
+.unit_new .modal-header.middle {
+    text-align: center;
+    text-decoration: underline;
+}
+.unit_new .modal-header.middle button.close {
+    font-size: 27px;
+    margin-right: 23px;
+   
+}
+.unit_new .modal-body.pad {
+    padding: 18px 0px 0px 49px;
+}
+.emergancy .main-div div#contact_list_wrapper {
+    padding-top: 4px;
+}
+
+
+.block {
+    width: 60%;
+    border: 1px solid #b5b2b2;
+    margin: 0 auto 1px -13px;
+    padding: 24px;
+    border-radius: 7px;
+}
+.block p {
+    /*font-size: 17px;
+    font-weight: 600;*/
+}
+.invoice-detail.right_block .form-group {
+    margin: 21px 0px -15px 0px;
+}
+
+.invoice-detail div#user_list2_wrapper .dataTables_length {
+    display: none;
+}
+.invoice-detail .new_tbl .dataTables_filter {
+    display: none;
+}
+.invoice-detail .list h3 {
+    font-size: 14px;
+    background-color: #cccccc;
+    color: #333;
+    width: 116px;
+    padding: 11px;
+    margin-left: 21px;
+    border-radius: 7px 7px 0px 0px;
+}
+.invoice-detail .list {
+    width: 100%;
+    float: left;
+    padding-top: 14px;
+}
+.invoice-detail h4.chnj {
+    font-size: 15px;
+    color: #209de4;
+    font-weight: 600;
+}
+.invoice-detail .new_tbl tr.list_head {
+    color: #333;
+    background-color: #ccc;
+}
+
+.invoice-detail td.amount input.form-control.error {
+    width: 211px;
+}
+.invoice-detail td.amount .error {
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.invoice-detail .main-div {
+    padding-top: 88px;
+    overflow-x: auto;
+}
+.invoice-detail .new_tbl td.qty {
+    width: 90px;
+}
+.invoice-detail .new_tbl td.amount {
+    width: 90px;
+}
+.invoice-detail .new_tbl table.maintenance_second_table {
+    float: right;
+}
+.invoice-detail .new_tbl table.maintenance_second_table td input {
+    width: 256px;
+    margin-top: 12px;
+}
+.invoice-detail .new_tbl table.maintenance_second_table td strong {
+    padding: 8px;
+    font-weight: 500;
+}
+.invoice-detail table.maintenance_second_table .text-right {
+    text-align: right;
+    padding-bottom: 30px;
+    padding-top: 14px;
+}
+.invoice-detail .add_item {
+    padding-top: 66px;
+    float: left;
+}
+.invoice-detail .add_item h3 {
+    margin-bottom: -19px;
+    font-size: 18px;
+}
+.invoice-detail .add_item a {
+    color: #655e5e;
+    font-weight: 600;
+    margin-left: 0px;
+}
+.invoice-detail .right_block {
+    margin-top: 0px;
+}
+.invoice-detail td.extra input {
+    width: 100%;
+    padding: 5px 2px;
+    border-radius: 4px;
+    border: 1px solid #cac9c9;
+}
+
+#loader-model {
+    background: rgba(0, 0, 0, 0.44) url(https://portal.automationagency.com/webapp-manager/public/img/page-loader.gif) no-repeat scroll center center;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+.residentusers td.detail_unit {
+    background: url('https://datatables.net/examples/resources/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+.residentusers tr.shown td.detail_unit {
+    background: url('https://datatables.net/examples/resources/details_close.png') no-repeat center center;
+}
+ .residentusers .main-div {
+    padding-top: 56px;
+}
+.residentusers .modal-header.middle {
+    text-align: center;
+    text-decoration: underline;
+}
+.residentusers .modal-header.middle button.close {
+    font-size: 27px;
+    margin-right: 23px;
+   
+}
+.residentusers .modal-body.pad {
+    padding: 18px 0px 0px 49px;
+}
+
+.manage_new .main-div div#contact_list_wrapper {
+    padding-top: 0px;
+}
+.manage_new .square_1 {
+    width: 100%;
+    border: 2px solid #9c9c9c !important;
+    padding: 33px 0px ! important;
+    border-radius: 10px;
+    box-shadow: 0px 1px 6px 1px #9c9c9c;
+}
+.manage_new .content .contact-margin-top {
+    padding-bottom: 35px;
+}
+.manage_new .square_1 .text_div {
+    padding-top: 14px;
+}
+
+ .emergancy_contact_add .align-window {
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding-top: 25px;
+    border-radius: 8px;
+}
+.emergancy_contact_add .add_unit {
+    width: 70%;
+    margin: 0px 200px auto;
+}
+.emergancy_contact_add .add_unit input.btn.btn-default.my_btn {
+    padding: 9px 27px;
+}
+
+.security1 .link_block {
+    width: 85%;
+    border: 1px solid #ababab;
+    padding: 52px 12px 65px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.security1 .heding_link h3 {
+    font-size: 15px;
+    font-weight: 600;
+}
+.security1 .link_detail h3 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #e44242;
+    margin-top: -8px;
+    border: 1px solid #c1c0c0;
+    padding: 10px 15px;
+    border-radius: 7px;
+}
+.security1 .link_detail h3 span {
+    padding-left: 17px;
+}
+.security1 .link_detail button#pcs-cc-button {
+    margin-top: -8px;
+}
+.col-sm-8.new_popup {
+    margin-top: -15px !important;
+}
+.new-pad {
+    padding-bottom: 25px;
+}
+.upr_line {
+    padding: 60px 46px;
+}
+.upr_line button {
+    float: right !important;
+}
+.sidebar ul li a.side_icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    border: 0 !important;
+}
+.nav > li:hover > a {
+    background: #5b5b5b url(../images/border-line.jpg) repeat-x left bottom !important;
+}
+.detail-body {
+    width: 64%;
+}
+.modal-body.pad1 {
+    padding: 18px 27px 0 27px;
+}
+
+span.pull-left.small-text {
+    font-size: 16px;
+    padding-top: 6px;
+}
+.resident_div p {
+    font-size: 13px;
+    font-weight: 500;
+}
+.unit_div p {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+  table.family_tables > thead > tr{
+        background-color: #e8e8e8 !important;
+ }
+
+ .country_code {
+    max-width: 45px;
+    padding: 0;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    display: inline-block;
+    margin-right: -2px;
+}
+.country_phone_code {
+    max-width: 45px;
+    border-radius: 0;
+    display: inline-block;
+    margin: -3px;
+    padding: 0 5px;
+}
+.cell_number {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    display: inline-block;
+    margin: -1px;
+    max-width: 635.16px !important;
 }

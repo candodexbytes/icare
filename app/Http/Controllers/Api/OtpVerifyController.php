@@ -41,4 +41,51 @@ class OtpVerifyController extends Controller
         
     	return response()->json(['response'=>'0']);
     }
+    public function otpVerifyVisitor(Request $request)
+    {
+        $Otp_obj = new Otp;
+        $postData = $request->all();
+
+        if(empty($postData['token'])) $errors[] = "token";     
+        if(empty($postData['cell_number'])) $errors[] = "cell_number";     
+        if(empty($postData['otp'])) $errors[] = "otp";     
+        if(empty($postData['country_code'])) $errors[] = "country_code";    
+
+        if(!empty($errors)) {
+            $message = array("Please sent in the following fields:");
+            foreach($errors as $error) {
+                $message[] = $error;
+            }
+            $message = join(',', $message);
+            return response()->json(['response' => false , 
+                'message' =>  $message              
+            ]);
+        }
+
+        $token = base64_decode($postData['token']);
+        
+        $cell_number = $postData['cell_number'] ;
+        $country_code = $postData['country_code'] ;
+        
+        if($token == 'otp-verify'){
+            $otp = $postData['otp'] ;
+
+            $verify_array = array(
+                                'cell_number'  => $cell_number,
+                                'country_code'    => $country_code,
+                                'otp'    => $otp
+                                );   
+            //print_r($verify_array['otp']);die();
+            $check = $Otp_obj->veryfyVisitorotp($verify_array);
+            if(count($check) > 0){
+                return response()->json(['response'=>'1','data'=>$check]);
+            }else{
+                return response()->json(['response'=>'2']);
+            }
+            
+        }
+        
+        return response()->json(['response'=>'0']);
+    }
+    
 }

@@ -7,11 +7,19 @@
     "require": {
         "php": ">=7.0.0",
         "aloha/twilio": "^3.0",
+        "barryvdh/laravel-cors": "^0.9.2",
+        "barryvdh/laravel-dompdf": "^0.8.1",
+        "cyvelnet/laravel-billplz": "^0.1.0",
         "fideloper/proxy": "~3.3",
+        "kidino/billplz": "^0.1.1",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
         "laravelcollective/html": "^5.5",
-        "simplesoftwareio/simple-sms": "3.0.*"
+        "nexmo/client": "^1.1",
+        "nexmo/laravel": "^1.0",
+        "hazelnuts23/billplzv3": "1.0.0",
+        "simplesoftwareio/simple-sms": "3.0.*",
+        "unisharp/laravel-ckeditor": "^4.6"
     },
     "require-dev": {
         "filp/whoops": "~2.0",

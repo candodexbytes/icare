@@ -1,0 +1,57 @@
+@media screen and (min-width: 320px) and (max-width: 667px) {
+.block {
+    width: 86%;
+}
+.registration1 {
+    width: 88%;
+    margin-top: 18px;
+    border-radius: 28px;
+    background-color: #fff;
+    box-shadow: 1px 0 5px 1px #777;
+}
+.visitor_list {
+    width: 100%;
+    padding: 0px 15px;
+}
+.visitor_tbl {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+.img_block {
+   
+    width: 100%;
+    margin: 0 auto;
+}
+.visitor_code {
+    width: 100%;
+    margin: 0 auto;
+}
+.visitor_code li {
+    padding: 5px 20px;
+}
+ul.menu {
+    width: 100%;
+    margin: 0 auto;
+}
+.cemera_img {
+    width: 100%;
+    margin: 0 auto;
+}
+.car_tbl {
+    width: 85%;
+}
+.img_block {
+    border: 1px solid #cac3c3;
+    width: 100%;
+}
+.registration {
+    width: 100%;
+}
+.visitor_form {
+    width: 100%;
+}
+
+
+
+}

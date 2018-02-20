@@ -1,11 +1,13 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Auth;
 use Illuminate\Http\Request;
+use Session;
+
 class LoginController extends Controller
 {
     /*
@@ -26,7 +28,8 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/dashboard';
+
+    protected $redirectTo = '/set';
 
     /**
      * Create a new controller instance.
@@ -37,8 +40,19 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
     public function logout(Request $request) {
       Auth::logout();
+       if(Session::has('Property')){
+               Session::forget('Property');
+       }      
       return redirect('/login');
+    }
+
+
+    public function test()
+    {
+        $user_obj =  new HomeController;
+        echo $user_obj->test();
     }
 }
