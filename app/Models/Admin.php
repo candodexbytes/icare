@@ -134,25 +134,50 @@ class Admin extends Model {
     }
 
 
-    public function getAllUnitUsers($property_id , $type){  
-        if($type == 0){      
-          $query = DB::table('unit_user_relation')
-                        ->Join('users',[['unit_user_relation.user_id','=','users.id']])
-                        ->Join('property_units',[['property_units.id','=','unit_user_relation.unit_id']])
-                        ->where('unit_user_relation.property_id', $property_id)                        
-                       ->get(['property_units.*','users.*','unit_user_relation.*']); 
-        }else{
-            $query = DB::table('unit_user_relation')
-                        ->Join('users',[['unit_user_relation.user_id','=','users.id']])
-                        ->Join('property_units',[['property_units.id','=','unit_user_relation.unit_id']])
-                        ->where('unit_user_relation.property_id', $property_id)  
-                        ->where('users.type', $type)                        
-                        ->get(['property_units.*','users.*','unit_user_relation.*']); 
-        }  
-        if ($query->isEmpty()) {
-            return false;
+    public function getAllUnitUsers($property_id , $type, $login_type){  
+        if ($login_type == 5) {
+            if($type == 0){      
+                $query = DB::table('unit_user_relation')
+                            ->Join('users',[['unit_user_relation.user_id','=','users.id']])
+                            ->Join('property_units',[['property_units.id','=','unit_user_relation.unit_id']])
+                            ->where('users.delete_status', 0)                        
+                            ->where('unit_user_relation.property_id', $property_id)                        
+                           ->get(['property_units.*','users.*','unit_user_relation.*']); 
+            }else{
+                $query = DB::table('unit_user_relation')
+                            ->Join('users',[['unit_user_relation.user_id','=','users.id']])
+                            ->Join('property_units',[['property_units.id','=','unit_user_relation.unit_id']])
+                            ->where('users.delete_status', 0) 
+                            ->where('unit_user_relation.property_id', $property_id)  
+                            ->where('users.type', $type)                        
+                            ->get(['property_units.*','users.*','unit_user_relation.*']); 
+            }  
+            if ($query->isEmpty()) {
+                return false;
+            } else {
+                return $query;
+            }
+            
         } else {
-            return $query;
+            if($type == 0){      
+                $query = DB::table('unit_user_relation')
+                            ->Join('users',[['unit_user_relation.user_id','=','users.id']])
+                            ->Join('property_units',[['property_units.id','=','unit_user_relation.unit_id']])
+                            ->where('unit_user_relation.property_id', $property_id)                        
+                           ->get(['property_units.*','users.*','unit_user_relation.*']); 
+            }else{
+                $query = DB::table('unit_user_relation')
+                            ->Join('users',[['unit_user_relation.user_id','=','users.id']])
+                            ->Join('property_units',[['property_units.id','=','unit_user_relation.unit_id']])
+                            ->where('unit_user_relation.property_id', $property_id)  
+                            ->where('users.type', $type)                        
+                            ->get(['property_units.*','users.*','unit_user_relation.*']); 
+            }  
+            if ($query->isEmpty()) {
+                return false;
+            } else {
+                return $query;
+            }
         }
     }
     
@@ -414,6 +439,12 @@ class Admin extends Model {
     public function getNoticeByPtdId($ptd_id, $property_id) {
 
         return DB::table('notice')->where('property_id', $property_id)->orderBy('notice.create_date', 'DESC')->get();
+        ;
+    }
+
+    public function getNoticeCounts($ptd_id, $property_id) {
+
+        return DB::table('notice')->where('property_id', $property_id)->where('seen_status', 0)->get();
         ;
     }
 
@@ -830,6 +861,24 @@ class Admin extends Model {
 
     public function deleteTeman($id){
         return DB::table('users')->where('id', $id)->delete();
+    }
+
+    public function changeNoticeStatus($id, $dataArray){
+        return DB::table('notice')
+                    ->where('id', $id)
+                    ->update($dataArray);
+    }
+
+    public function temanDetail($id){
+        return DB::table('users')
+                    ->where('id', $id)
+                    ->first();
+    }
+
+    public function updateTeman($dataArray){
+        return DB::table('users')
+                    ->where('id', $dataArray['id'])
+                    ->update($dataArray);
     }
 
 }
